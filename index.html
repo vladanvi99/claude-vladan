@@ -12,14 +12,14 @@
 
     <header id="header">
       <div class="logo">
-        <img src="images/logo.png" alt="" id="header-img">
+        <img src="http://tim-12.com/wp-content/uploads/2021/03/cropped-logo-1.png" alt="" id="header-img">
       </div>
       <nav id="nav-bar">
         <a class="nav-link" href="#banner">Home</a>
         <a class="nav-link" href="#about">About Us</a>
         <a class="nav-link" href="#services">Services</a>
-        <a class="nav-link" href="#">Prices</a>
-        <a class="nav-link" href="#">Get Started</a>
+        <a class="nav-link" href="#prices">Prices</a>
+        <a class="nav-link" href="#getStarted">Get Started</a>
       </nav>
       <div class="menu">
         <i class="fas fa-bars"></i>
@@ -72,12 +72,63 @@
         </div>
       </div>
     </section>
-    <form id="form" action=" https://www.freecodecamp.com/email-submit">
-      <input type="email" placeholder="email">
-      <button type="submit">submit</button>
-
-
-    </form>
+    <section id="prices">
+      <div class="section-head">
+        <h1>Prices</h1>
+        <div class="line"></div>
+      </div>
+      <div class="prices-wrap">
+        <div class="item">
+          <div class="card">
+            <h2>Basic</h2>
+            <p class="price">$250</p>
+            <ul>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+            </ul>
+            <button class="select-btn">Select</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <h2>Medium</h2>
+            <p class="price">$350</p>
+            <ul>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+            </ul>
+            <button class="select-btn">Select</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <h2>Pro</h2>
+            <p class="price">$550</p>
+            <ul>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+            </ul>
+            <button class="select-btn">Select</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="getStarted">
+      <div class="section-head">
+        <h1>Get Started</h1>
+        <div class="line"></div>
+      </div>
+      <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" placeholder="email" name="email" required>
+        <input id="submit" type="submit">Submit</button>
+      </form>
+    </section>
     <script  src="js/index.js"></script>
   </body>
 </html>
