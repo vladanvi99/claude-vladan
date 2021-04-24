@@ -19,7 +19,8 @@ html{
        width:250px;
        background-color:#85B54E;
        margin:auto;
-          }
+       margin-top: 3px;
+    }
 }
 #header{
     position: fixed;
@@ -82,7 +83,7 @@ html{
 
          h1{
              text-align: center;
-             font-size: 40px;
+             font-size: 45px;
              color:#414141;
              font-weight: 600;
          }
@@ -95,11 +96,156 @@ html{
     }
 }
 #about{
+    padding: 0 15px;
     video{
         width:600px;
+        max-width: 100%;
         display:block;
         margin:auto;
-        margin-top: 40px;
-
+        margin-top: 60px;
     }
+}
+#services{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    .services-wrap{
+        margin-top: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item{
+            width: 25%;
+            padding: 0 15px;
+            margin-top: 25px;
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                i{
+                    color: #85b54e;
+                    font-size: 56px;
+                    text-align: center;
+                }
+                p{
+                    font-size: 22px;
+                    text-align: center;
+                    color: #414141;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991.98px){
+    #services{
+        .services-wrap{
+            .item{
+                width: 50%;
+            }
+        }
+    }
+}
+@media screen and (max-width:575.98px){
+    #services{
+        .services-wrap{
+            .item{
+                width: 100%;
+            }
+        }
+    }
+}
+#prices{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    .prices-wrap{
+        margin-top: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item{
+            width: 33.33%;
+            padding: 0 15px;
+            margin-top: 25px;
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding-bottom: 25px;
+                box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+                h2{
+                    background-color: #85b54e;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 32px;
+                    font-weight: 500;
+                    padding: 12px 5px;
+                    width: 100%;
+                }
+                .price{
+                    color: #414141;
+                    font-weight: 600;
+                    font-size: 34px;
+                    padding-top: 20px;
+                }
+                ul{
+                    list-style-type:none;
+                    li{
+                        line-height: 40px;
+                        font-size: 24px;
+                        color: #585858;
+                        text-align: center;
+                    }
+                }
+                .select-btn{
+                    width: 230px;
+                    background-color: #85B54E;
+                    color: #fff;
+                    font-size: 18px;
+                    border: 1px solid #85B54E;
+                    outline: none;
+                    padding: 8px 0px;
+                    cursor: pointer;
+                    &:hover{
+                        transition: .3s;
+                        color: #85B54E;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991.98px){
+    #prices{
+        .prices-wrap{
+            .item{
+                width: 50%;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:575.98px){
+    #prices{
+        .prices-wrap{
+            .item{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+footer{
+    background-color: #414141;
+    color: #fff;
+    text-align: center;
+    padding: 10px 5px;
+    margin-top: 60px;
 }
