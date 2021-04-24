@@ -126,7 +126,7 @@ html {
 #banner .wrap p {
   text-align: center;
   font-size: 20px;
-  color: #414141;
+  color: #a78484;
   font-weight: 300;
 }
 
@@ -309,6 +309,50 @@ html {
   #prices .prices-wrap .item {
     width: 100%;
   }
+}
+
+#getStarted form {
+  padding: 0 15px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#getStarted form input[type="email"] {
+  width: 400px;
+  max-width: 100%;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+#getStarted form input[type="submit"] {
+  border: 1px solid #85B54E;
+  outline: none;
+  background-color: #85B54E;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#getStarted form input[type="submit"]:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+  background-color: #fff;
+  color: #85B54E;
 }
 
 footer {

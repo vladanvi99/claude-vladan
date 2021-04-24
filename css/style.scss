@@ -240,8 +240,47 @@ html{
             }
         }
     }
-    
 }
+#getStarted{
+    form{
+        padding: 0 15px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction:column;
+        gap: 30px;
+        align-items: center;
+        justify-content:center;
+        input[type="email"]{
+            width: 400px;
+            max-width: 100%;
+            padding: 5px 10px;
+            font-size: 18px;
+
+
+
+        }
+        input[type="submit"]{
+            border: 1px solid #85B54E;
+            outline: none;
+            background-color: #85B54E;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 15px;
+            cursor: pointer;
+            &:hover{
+                transition: .3s;
+                color:#fff;
+                background-color: #fff;
+                color: #85B54E;
+            }
+            
+            
+        }
+    }
+
+
+}
+
 footer{
     background-color: #414141;
     color: #fff;
