@@ -26,3 +26,17 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
+//MOBILE MENU
+let menuBtn = document.querySelector('#header .menu');
+let navWrap = document.querySelector('#header .nav-wrap');
+
+menuBtn.addEventListener('click', () => {
+  if(navWrap.classList.contains("menu-mobile")){
+    navWrap.classList.remove('menu-mobile')
+    menuBtn.innerHTML="<i class='fas fa-bars'></i>"
+  }else{
+    navWrap.classList.add('menu-mobile')
+    menuBtn.innerHTML="<i class='fas fa-times-circle'></i>"
+  }
+  
+})

@@ -57,7 +57,7 @@ html {
   width: 170px;
 }
 
-#header nav {
+#header .nav-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,14 +67,14 @@ html {
           align-items: center;
 }
 
-#header nav a {
+#header .nav-wrap a {
   text-decoration: none;
   font-size: 20px;
   color: #585858;
   position: relative;
 }
 
-#header nav a::after {
+#header .nav-wrap a::after {
   content: "";
   display: block;
   position: absolute;
@@ -84,10 +84,52 @@ html {
   background-color: #585858;
 }
 
-#header nav a:hover::after {
+#header .nav-wrap a:hover::after {
   width: 100%;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media screen and (max-width: 767.98px) {
+  #header .menu {
+    display: block;
+    font-size: 30px;
+    color: #414141;
+    cursor: pointer;
+  }
+  #header nav {
+    position: relative;
+  }
+  #header nav .nav-wrap {
+    position: fixed;
+    top: 85.56px;
+    right: -100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 280px;
+    max-width: 100%;
+    background-color: #fff;
+    text-align: center;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #000;
+    border-top: none;
+    border-right: none;
+  }
+  #header nav .menu-mobile {
+    -webkit-transition: .3s;
+    transition: .3s;
+    right: 0;
+  }
 }
 
 #banner {
@@ -126,7 +168,7 @@ html {
 #banner .wrap p {
   text-align: center;
   font-size: 20px;
-  color: #a78484;
+  color: #414141;
   font-weight: 300;
 }
 
